@@ -31,3 +31,27 @@ INSERT VISUALIZATIONS HERE
 I also wanted to look for outliers in the data (using IQR Rule). The salaries seem to be normally distributed. After analyzing salaries above the upper IQR value, it appeared that all of these entries seemed legitimate because most of the roles were excutive level with ~20+ years of experience in high paying industries so these entries were not removed.
 
 INSERT BOX PLOT VISUAL HERE
+
+## Establishing Baseline
+Because this project is a case study, I did not have a anything to compare my future result to, so I decide to develop a linear model to establish a hypothetical baseline. This very simple model produced a MSE of 1288.
+
+Next, based on the findings from the EDA I did, a few models that I believe could greatly improve the accuracy results from the baseline prediction above (MSE = 1288) include:
+1.Linear Regression
+2.Random Forest Regression
+3.Gradient Boosting Regression
+
+## Predicitive Modeling
+Because the majority of the features at my disposal were categorical, I used one-hot encoding for all categorical variables. After creating the models and testing using cross validation, the 3 models provided me the following results in terms of MSE:
+
+LINEAR REGRESSION --> 384.47
+
+RANDOM FOREST REGRESSION --> 367.75
+
+GRADIENT BOOSTING REGRESSION -->357.55
+
+## Conclusion
+I then took these results, selected the best model, automate the pipeline, and deployed my solution - saving the results and predictions. It is clear from these results, that the Gradient Boosting Regression model provided the best results. 
+
+Taking a look at the feature importance, I found that the job type of Janitor, Years of Experience, and Miles from Metropolis were the top 3. The bar chart visualizing feature importances can be seen below:
+*INSERT Feature importance bar graph here*
+
