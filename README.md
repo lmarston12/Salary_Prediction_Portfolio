@@ -5,7 +5,7 @@ This project will predict salaries based on job descriptions and features. There
 
 In this project, I develop 3 models (Linear Regression, Random Forest Regression, and Gradient Boosting Regression) and identify the best model to use by comparing the Mean Squared Errors (MSE).
 
-## 1. Intro
+## Intro
 The training data is split into two CSV files, one for the features given and one for the target variable. The test data contains the Job IDs and the features we need to use to predict the salaries. All of the data sets used contained ~1000000 data entries. The following are the features used and the associated descriptions:
 
 JobId: The ID of job. It is unique for every employee.
@@ -30,7 +30,7 @@ INSERT VISUALIZATIONS HERE
 
 I also wanted to look for outliers in the data (using IQR Rule). The salaries seem to be normally distributed. After analyzing salaries above the upper IQR value, it appeared that all of these entries seemed legitimate because most of the roles were excutive level with ~20+ years of experience in high paying industries so these entries were not removed.
 
-INSERT BOX PLOT VISUAL HERE
+BOX PLOT - SALARY TARGET HERE
 
 ## Establishing Baseline
 Because this project is a case study, I did not have a anything to compare my future result to, so I decide to develop a linear model to establish a hypothetical baseline. This very simple model produced a MSE of 1288.
