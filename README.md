@@ -30,7 +30,6 @@ INSERT VISUALIZATIONS HERE
 
 I also wanted to look for outliers in the data (using IQR Rule). The salaries seem to be normally distributed. After analyzing salaries above the upper IQR value, it appeared that all of these entries seemed legitimate because most of the roles were excutive level with ~20+ years of experience in high paying industries so these entries were not removed.
 
-BOX PLOT - SALARY TARGET HERE
 ![Target(Salary) Box plot and distribution](/Desktop/Salary_Prediction_Portfolio/Visuals/TargetSalaryDistribution.PNG)
 
 ## Establishing Baseline
