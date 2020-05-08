@@ -5,6 +5,8 @@ This project will predict salaries based on job descriptions and features. There
 
 In this project, I develop 3 models (Linear Regression, Random Forest Regression, and Gradient Boosting Regression) and identify the best model to use by comparing the Mean Squared Errors (MSE).
 
+![Salary Predictions](javascript:void(0))
+
 ## Intro
 The training data is split into two CSV files, one for the features given and one for the target variable. The test data contains the Job IDs and the features we need to use to predict the salaries. All of the data sets used contained ~1000000 data entries. The following are the features used and the associated descriptions:
 
