@@ -69,7 +69,7 @@ RANDOM FOREST REGRESSION --> 367.75
 GRADIENT BOOSTING REGRESSION -->357.55
 
 ## Conclusion
-I then took these results, selected the best model, automate the pipeline, and deployed my solution - saving the results and predictions. It is clear from these results, that the Gradient Boosting Regression model provided the best results. 
+I then took these results, selected the best model, automate the pipeline, and deployed my solution - saving the results and predictions. It is clear from these results, that the Gradient Boosting Regression model provided the best results. This resulted in an MSE improvement of 72% from the baseline.  
 
 Taking a look at the feature importance, I found that the job type of Janitor, Years of Experience, and Miles from Metropolis were the top 3. The bar chart visualizing feature importances can be seen below:
 
