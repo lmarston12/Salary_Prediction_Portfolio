@@ -27,20 +27,29 @@ One thing I did  to further process and clean the data was to check for duplicat
 Before diving into the machine learning algorithms, I performed exploratory data analysis (EDA) to identify significant features that affect the salary. I found that some of the features have strong trends with salary they are visualized below:
 
 ![](images/SalaryCorrelationjobType.png)
+
 There is a positive correlation between the job type and the salary they make, with management and executive roles (CFO, CTO, CEO) making the most money
 
 ![](images/SalaryCorrelationIndustry.png)
+
 The entries in the Oil, Finance, and Web industries have the highest salaries
 
 ![](images/SalaryCorrelationMilesFromMetropolis.png)
+
 The salaries typically decrease the further from a metropolis someone lives
 
 ![](images/SalaryCorrelationYearsExperience.png)
+
 There is a strong positive correlation between the years of experience someone has their salary
+
+![](images/CorrelationHeatmap.png)
+
+We see that jobType is most strongly correlated with salary, followed by degree, major, and yearsExperience. Among the features, we see that degree and major have a strong degree of correlation and jobType has a moderate degree of correlation with both degree and major.
 
 I also wanted to look for outliers in the data (using IQR Rule). The salaries seem to be normally distributed. After analyzing salaries above the upper IQR value, it appeared that all of these entries seemed legitimate because most of the roles were excutive level with ~20+ years of experience in high paying industries so these entries were not removed.
 
 ![](images/TargetSalaryDistribution.png)
+
 
 ## Establishing Baseline
 Because this project is a case study, I did not have a anything to compare my future result to, so I decide to develop a linear model to establish a hypothetical baseline. This very simple model produced a MSE of 1288.
